@@ -1,9 +1,12 @@
 let computerCount = 0;
 let playerCount = 0;
 while (computerCount < 5 && playerCount < 5) {
+
+  let playerChoice = prompt("Your Turn").toUpperCase();
+
   let pool = ["ROCK", "PAPER", "SCISSORS"];
   let getComputerChoice = pool[Math.floor(Math.random() * pool.length)];
-  playerChoice = prompt("Your Turn").toUpperCase();
+
   let compare = function (player, computer) {
     if (player === computer) {
       return "tie";
